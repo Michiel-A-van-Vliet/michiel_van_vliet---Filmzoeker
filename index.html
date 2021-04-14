@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Filmzoeker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Filmzoeker</h1>
+    </header>
+
+    <nav class="movie-filter" id="movie-filter">
+        <label for="all" class="movie-filter__item">
+            <input type="radio" id="all" name="filter" value="all" checked>
+            Alle films
+        </label>
+        <label for="new" class="movie-filter__item">
+            <input type="radio" id="new" name="filter" value="new">
+            Nieuwe films
+        </label>
+        <label for="avengers" class="movie-filter__item">
+            <input type="radio" id="avengers" name="filter" value="avengers">
+            Avengers
+        </label>
+        <label for="x-men" class="movie-filter__item">
+            <input type="radio" id="x-men" name="filter" value="x-men">
+            X-Men
+        </label>
+        <label for="princess" class="movie-filter__item">
+            <input type="radio" id="princess" name="filter" value="princess">
+            Princess
+        </label>
+        <label for="batman" class="movie-filter__item">
+            <input type="radio" id="batman" name="filter" value="batman">
+            Batman
+        </label>
+        <br>
+        <label for="search" class="movie-filter__item">
+            Zoek in titel:
+            <input type="text" id="title-search" name="filter" value="Zoek">
+        </label>
+    </nav>
+
+    <main class="movies" id="movies">
+        <ul class="movies__list" id="movies__list">
+            <!-- This is where the script wil add list items -->
+        </ul>
+    </main>
+
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
